@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 0;
+}
+a{
+    text-decoration:none;
+}
+kbd{
+     border: 1px solid black;
+     border-radius: 2px;
+     box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.2);
+     margin-left: 5px;
+     display: inline-block;
+     width: 3em;
+     height: 3em;
+     text-align: center;
+     line-height: 3em;
+     font-family: 'Courier New', Courier, monospace;
+     font-weight: bold;
+     text-transform: uppercase;/*新属性*/
+     position: relative;
+}
+kbd>button{
+    position: absolute;
+    top: 0;
+    left:0;
+    display: none;
+}
+kbd:hover>button{
+    display: inline-block;
+}
+#maincontent>div{
+    margin-top: 10px;
+}
+#maincontent>div:nth-child(2){
+    margin-left: 1em;
+}
+#maincontent>div:nth-child(3){
+    margin-left: 2em;
+}
+#maincontent{
+    display: inline-block;
+}
+main{
+    text-align: center;
+    margin-top: 40px;
+}
