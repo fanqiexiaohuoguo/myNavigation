@@ -46,7 +46,7 @@ while(index<keys['length']){
             curKey=curButton.target.id//找到用户当前点击的元素
             userWebsite=prompt('给我一个网址')
             hash[curKey]=userWebsite//hash发生了变更
-            //5.保存进度，存此次变更后的hash
+            //5.保存进度，存此次变更后的hash,使用localStorage存用户编辑信息
             localStorage.setItem('userChange',JSON.stringify(hash))
         }
         kbd.appendChild(buttonEdit)
@@ -62,4 +62,4 @@ document.onkeypress=function(curKbd){
     window.open("http://"+website,'_blank')
     // location.href="http://"+website//让当前窗口网址定位到新的网址
 }
-// 5.使用localStorage存用户编辑信息
+
